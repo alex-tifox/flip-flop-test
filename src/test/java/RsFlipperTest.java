@@ -44,6 +44,7 @@ public class RsFlipperTest {
         rsFlipper.setR(r);
         if (s && r) {
             exceptionRule.expect(IllegalArgumentException.class);
+            System.out.println("Exception was thrown");
         }
         assertEquals(q, rsFlipper.flipQ(rsFlipper.isS(), rsFlipper.isR()));
         System.out.println(rsFlipper.toString());
